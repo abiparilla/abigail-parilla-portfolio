@@ -6,15 +6,12 @@
     <meta name="description" content="Abigail Parilla's portfolio showcasing her projects and skills.">
     <title>Abigail Parilla's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
 <nav>
     <ul>
         <li>Abigail Parilla</li>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -23,27 +20,25 @@
     </ul>
 </nav>
 
-<header>
-    <!-- Photo -->
-    <h1>Hello, I'm Abigail</h1>
-    <p>Future data professional</p>
-    <!-- View projects & get in touch buttons -->
+<header id="home">
+    <div class="hero-photo">
+        <img src="assets/abigail-portrait.jpeg" alt="Portrait of Abigail Parilla">
+    </div>
+    <div class="hero-copy">
+        <h1>Hello, I'm Abigail</h1>
+        <p>Aspiring information systems professional and data-driven problem solver focused on building user-centered digital solutions, leveraging analytics and modern technologies to drive business insights and real-world impact.</p>
+        <div class="hero-socials">
+            <a class="hero-social-button" href="https://www.linkedin.com/in/abigailparilla/" target="_blank" rel="noopener noreferrer" aria-label="Visit Abigail Parilla on LinkedIn">
+                <img class="hero-social-icon" src="assets/linkedin-icon.png" alt="">
+            </a>
+            <a class="hero-social-button" href="https://github.com/abiparilla" target="_blank" rel="noopener noreferrer" aria-label="Visit Abigail Parilla on GitHub">
+                <img class="hero-social-icon" src="assets/github-icon.png" alt="">
+            </a>
+        </div>
+    </div>
 </header>
 
 <main>
-    <!-- About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm an aspiring information systems professional and data-driven problem solver focused on building user-centered digital solutions, leveraging analytics and modern technologies to drive business insights and real-world impact.</p>
-        <!-- Photo -->
-
-        <h3>My Journey</h3>
-        <p>I've always been interested in the intersection of business and technology, especially how data can drive smarter decisions. That interest led me to study Information Systems at Hofstra University, where I've gained hands-on experience in analytics, web development, and problem-solving. From building responsive websites to working on global consulting projects, I've learned how to think both technically and strategically.</p>
-        <h3>My Approach</h3>
-        <p>I like to keep things simple, practical, and user-focused. Whether I'm analyzing data or building something from scratch, I aim to create solutions that are clear, effective, and actually useful. I enjoy collaborating with others, paying attention to the details, and continuously learning new tools to improve what I build.
-    </section>
-
-    <!-- Skills -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -57,7 +52,6 @@
         </ul>
     </section>
 
-    <!-- Projects -->
     <section id="projects"> 
         <h2>Projects</h2>
         <div class="project">
@@ -98,60 +92,183 @@
         </div>
     </section>
 
-    <!-- Experience -->
     <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Crew Member at Baskin-Robbins</h3>
-            <h4>June 2023 - January 2026</h4>
-            <ul>
-                <li>Reduced average customer wait times by 20% during peak hours by resolving customer inquiries and thinking critically to fix technical issues with the POS system</li>
-                <li>Managed time effectively and paid attention to details while processing 30-50 daily transactions, ensuring 100% accuracy in payment processing.</li>
-            </ul>
+    <h2>Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+        <div class="timeline-left">
+            <h3>Crew Member</h3>
+            <h4>Baskin-Robbins</h4>
+            <p class="status">June 2023 - January 2026</p>
         </div>
-        <div class="experience">
-            <h3>Banquet Server at Bridgeview Yacht Club</h3>
-            <h4>May 2022 - March 2023</h4>
-            <ul>
-                <li>Excelled in communication and active listening to accurately fulfill guest needs, resolving ~15 inquiries per shift</li>
-                <li>Adapted to dynamic event timelines, collaborating with catering and kitchen staff to ensure precise delivery of food and beverage service for 100-200 guests.</li>
-            </ul>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-right">
+            <p>
+            Reduced average customer wait times by 20% during peak hours by resolving
+            customer inquiries and troubleshooting POS system issues. Managed 30-50
+            daily transactions with 100% accuracy.
+            </p>
         </div>
-        <div class="experience">
-            <h3>STEM Camp Counselor at National Inventors Hall of Fame</h3>
-            <h4>July 2022</h4>
-            <ul>
-                <li>Led a 1-month STEM summer camp, guiding children in grades K-6 in building robots and hands-on projects</li>
-                <li>Collaborated with educators to develop interactive lesson plans, encouraging problem-solving and teamwork skills in STEM.</li>
-            </ul>
         </div>
+
+        <div class="timeline-item">
+        <div class="timeline-left">
+            <h3>Banquet Server</h3>
+            <h4>Bridgeview Yacht Club</h4>
+            <p class="status">May 2022 - March 2023</p>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-right">
+            <p>
+            Delivered high-quality service for events with 100-200 guests, handling
+            ~15 inquiries per shift while collaborating with kitchen staff to ensure
+            seamless execution.
+            </p>
+        </div>
+        </div>
+
+        <div class="timeline-item">
+        <div class="timeline-left">
+            <h3>STEM Camp Counselor</h3>
+            <h4>National Inventors Hall of Fame</h4>
+            <p class="status">July 2022</p>
+        </div>
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-right">
+            <p>
+            Led hands-on STEM activities for K-6 students, teaching robotics and
+            problem-solving while collaborating with educators to design engaging lessons.
+            </p>
+        </div>
+        </div>
+
+    </div>
     </section>
 
-    <!-- Certifications -->
     <section id="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>National Association of State Boards of Accountancy (NASBA): Business Ethics</li>
-            <li>Bloomberg Market Concepts (BMC) Certificate</li>
-            <li>Forage: Mastercard Cybersecurity Job Simulation</li>
-            <li>Microsoft Office Specialist: Excel Associate (Office 2019)</li>
-            <li>Bloomberg Finance Fundamentals (BFF) Certificate</li>
-        </ul>
+        <div class="certificate-gallery">
+            <a class="certificate-card" href="https://www.credly.com/badges/5831628c-bb45-49ce-9afa-9cafd4b7bf58/public_url" target="_blank" rel="noopener noreferrer" aria-label="Open Microsoft Office Specialist certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-Microsoft-Office-Specialist-Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open Microsoft Office Specialist certificate.</div>
+                </object>
+            </a>
+
+            <a class="certificate-card" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_a6kAbRAhHLu9WqQz2_1737742623388_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Forage Mastercard Cybersecurity certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-Forage-Mastercard-Cybersecurity-Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open Forage Mastercard Cybersecurity certificate.</div>
+                </object>
+            </a>
+
+            <a class="certificate-card" href="assets/Abigail-Parilla-Kaggle-Intro-to-Programming-Certificate.png" target="_blank" rel="noopener noreferrer" aria-label="Open Kaggle Intro to Programming certificate">
+                <img class="certificate-preview" src="assets/Abigail-Parilla-Kaggle-Intro-to-Programming-Certificate.png" alt="">
+            </a>
+
+            <a class="certificate-card" href="assets/Abigail-Parilla-X-Culture-International-Business-Consulting-Certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open X-Culture International Business Consulting certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-X-Culture-International-Business-Consulting-Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open X-Culture International Business Consulting certificate.</div>
+                </object>
+            </a>
+
+            <a class="certificate-card" href="https://portal.bloombergforeducation.com/certificates/nk7XRCi5pvn31XgdaZhRECPP" target="_blank" rel="noopener noreferrer" aria-label="Open Bloomberg BFF certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-Bloomberg-BFF.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open Bloomberg BFF certificate.</div>
+                </object>
+            </a>
+
+            <a class="certificate-card" href="https://portal.bloombergforeducation.com/certificates/MwXcR1sNVYWXLusCveBWwYYH" target="_blank" rel="noopener noreferrer" aria-label="Open Bloomberg BMC certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-Bloomberg-BMC.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open Bloomberg BMC certificate.</div>
+                </object>
+            </a>
+
+            <a class="certificate-card" href="https://www.linkedin.com/learning/certificates/9d32623324d12c92ae581da1400d9a8d165538c6fdf5e4e10950b1f56b07aa8e?accountId=194164881&u=194164881&success=true&authUUID=rPGCNH5FQ%2BShWpWLeu3t4A%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open Business Ethics certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-Business-Ethics-Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open Business Ethics certificate.</div>
+                </object>
+            </a>
+
+            <a class="certificate-card" href="assets/Abigail-Parilla-Career-Development-Challenge.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Career Development Challenge certificate">
+                <object class="certificate-preview" data="assets/Abigail-Parilla-Career-Development-Challenge.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+                    <div class="certificate-fallback">Preview unavailable. Open Career Development Challenge certificate.</div>
+                </object>
+            </a>
+        </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:abigailparilla06@gmail.com">abigailparilla06@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/abigailparilla/" target="_blank">linkedin.com/in/abigailparilla</a></p>
-        <p>GitHub: <a href="https://github.com/abiparilla" target="_blank">github.com/abiparilla</a></p>
-        <!-- Contact form -->
+        <div class="contact-grid">
+            <div class="contact-copy">
+                <h3>Let's Connect</h3>
+                <p class="contact-lead">Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you. Feel free to reach out.</p>
+
+                <div class="contact-links">
+                    <div class="contact-item">
+                        <span class="contact-item-label">Email</span>
+                        <a href="mailto:abigailparilla06@gmail.com">abigailparilla06@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-item-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/abigailparilla/" target="_blank" rel="noopener noreferrer">linkedin.com/in/abigailparilla</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-item-label">GitHub</span>
+                        <a href="https://github.com/abiparilla" target="_blank" rel="noopener noreferrer">github.com/abiparilla</a>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" placeholder="Your name" required>
+
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" placeholder="your.email@example.com" required>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" placeholder="Tell me about your project..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>2024 Abigail Parilla. All rights reserved.</p>
-    </footer>
+    <footer><p>© 2026 Abigail Parilla. All rights reserved.</p></footer>
 </main>
+
+<script>
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+        const subject = name ? `Portfolio inquiry from ${name}` : "Portfolio inquiry";
+        const body = [
+            `Name: ${name}`,
+            `Email: ${email}`,
+            "",
+            message
+        ].join("\n");
+
+        window.location.href = `mailto:abigailparilla06@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+}
+</script>
 
 </body>
