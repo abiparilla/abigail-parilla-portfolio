@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap");
 
-/* =========================
-   Root + Theme
-========================= */
-
 :root {
     --bg-night: #05010d;
     --bg-deep: #0d0820;
@@ -26,10 +22,6 @@
     --font-display: "Orbitron", "Avenir Next Condensed", "Arial Narrow", sans-serif;
     --font-body: "Space Grotesk", "Avenir Next", "Trebuchet MS", sans-serif;
 }
-
-/* =========================
-   Base Reset
-========================= */
 
 *,
 *::before,
@@ -125,10 +117,6 @@ p {
     line-height: 1.7;
 }
 
-/* =========================
-   Shared Layout
-========================= */
-
 nav ul,
 header,
 main {
@@ -197,16 +185,11 @@ h2::after {
     box-shadow: 0 0 14px var(--shadow-cyan);
 }
 
-/* =========================
-   Navigation
-========================= */
-
 nav {
     position: sticky;
     top: 0;
     z-index: 40;
     padding: 1rem 0;
-    backdrop-filter: blur(16px);
 }
 
 nav ul {
@@ -257,10 +240,6 @@ nav a:focus-visible {
     transform: translateY(-1px);
 }
 
-/* =========================
-   Hero
-========================= */
-
 header {
     display: grid;
     grid-template-columns: minmax(250px, 360px) minmax(0, 1fr);
@@ -271,9 +250,6 @@ header {
     padding: clamp(1.9rem, 5vw, 4rem);
     isolation: isolate;
 }
-
-/* Fix: removed the disabled header::before pseudo-element.
-   It had no renderable content, and later mobile-only positioning rules could never take effect. */
 
 header::after {
     content: "";
@@ -347,9 +323,6 @@ header h1 {
         0 0 34px rgba(94, 247, 255, 0.14);
 }
 
-/* Fix: removed the unused header h1::before rule.
-   It had styling but no content source, so the pseudo-element never rendered. */
-
 header p {
     max-width: 35rem;
     margin-top: 0;
@@ -399,10 +372,6 @@ header p {
         drop-shadow(0 0 10px rgba(255, 79, 216, 0.12));
 }
 
-/* =========================
-   Skills
-========================= */
-
 #skills {
     background:
         linear-gradient(160deg, rgba(17, 7, 43, 0.96), rgba(16, 9, 33, 0.94)) padding-box,
@@ -440,10 +409,6 @@ header p {
     color: var(--neon-gold);
     text-shadow: 0 0 16px rgba(255, 211, 109, 0.55);
 }
-
-/* =========================
-   Projects
-========================= */
 
 #projects {
     background:
@@ -526,9 +491,94 @@ header p {
     box-shadow: 0 0 12px rgba(94, 247, 255, 0.45);
 }
 
-/* =========================
-   Experience Timeline
-========================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: rgba(7, 14, 35, 0.72);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(94, 247, 255, 0.18);
+    box-shadow: 0 0 18px rgba(94, 247, 255, 0.1);
+    transition: 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 211, 109, 0.4);
+    box-shadow:
+        0 0 24px rgba(255, 79, 216, 0.15),
+        0 0 28px rgba(94, 247, 255, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.2rem;
+}
+
+.project-content h3 {
+    font-family: var(--font-display);
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    margin-bottom: 0.8rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.project-tags span {
+    background: rgba(94, 247, 255, 0.1);
+    color: var(--neon-cyan);
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+}
+
+.project-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+    color: white;
+}
+
+.btn.secondary {
+    background: rgba(94, 247, 255, 0.1);
+    color: var(--neon-cyan);
+}
+
+.btn.tertiary {
+    background: rgba(255, 211, 109, 0.12);
+    color: var(--neon-gold);
+    border: 1px solid rgba(255, 211, 109, 0.35);
+}
 
 #experience {
     background:
@@ -622,10 +672,6 @@ header p {
     margin-bottom: 0;
 }
 
-/* =========================
-   Certifications
-========================= */
-
 #certifications {
     background:
         linear-gradient(160deg, rgba(18, 9, 38, 0.96), rgba(12, 9, 29, 0.95)) padding-box,
@@ -687,10 +733,6 @@ header p {
     font-size: 0.95rem;
     text-align: center;
 }
-
-/* =========================
-   Contact
-========================= */
 
 #contact {
     background:
@@ -850,10 +892,6 @@ header p {
     outline: none;
 }
 
-/* =========================
-   Footer
-========================= */
-
 footer {
     width: 100%;
     margin-top: 0.35rem;
@@ -873,10 +911,6 @@ footer p {
     text-transform: uppercase;
     font-size: 0.72rem;
 }
-
-/* =========================
-   Responsive
-========================= */
 
 @media (max-width: 960px) {
     header {
@@ -989,8 +1023,6 @@ footer p {
         scroll-margin-top: 7rem;
     }
 
-    /* Fix: footer keeps the reduced bottom padding here.
-       main > section already gets its own full padding override below, so the earlier selector was dead. */
     footer {
         padding: 0 0 1.5rem;
     }

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f5f6f8;
+      padding: 40px;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    .content {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: #eef2ff;
+      color: #3b5bdb;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .btn.primary {
+      background: #3b82f6;
+      color: #fff;
+    }
+
+    .btn.secondary {
+      background: #e6f0ff;
+      color: #3b82f6;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Projects</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x300" alt="">
+      <div class="content">
+        <div class="title">Infia</div>
+        <div class="desc">Connect apps like Google, GitHub, and Slack with one-click OAuth to automate workflows.</div>
+        <div class="tags">
+          <div class="tag">Nextjs</div>
+          <div class="tag">OpenAI</div>
+          <div class="tag">Tailwind</div>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn primary">Visit</a>
+          <a href="#" class="btn secondary">Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x300" alt="">
+      <div class="content">
+        <div class="title">Full Stack Sheet</div>
+        <div class="desc">A structured roadmap to learn full-stack development with 850+ topics and progress tracking.</div>
+        <div class="tags">
+          <div class="tag">Nextjs</div>
+          <div class="tag">Authjs</div>
+          <div class="tag">Tailwind</div>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn primary">Visit</a>
+          <a href="#" class="btn secondary">Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x300" alt="">
+      <div class="content">
+        <div class="title">Logocat</div>
+        <div class="desc">Instantly fetch logos from any website using smart fallbacks like favicon, Open Graph, and meta tags.</div>
+        <div class="tags">
+          <div class="tag">Nextjs</div>
+          <div class="tag">Langchain</div>
+          <div class="tag">Tailwind</div>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn primary">Visit</a>
+          <a href="#" class="btn secondary">Source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x300" alt="">
+      <div class="content">
+        <div class="title">Hotkeys</div>
+        <div class="desc">Learn and master keyboard shortcuts to boost productivity and stay in flow.</div>
+        <div class="tags">
+          <div class="tag">React</div>
+          <div class="tag">shadcn/ui</div>
+          <div class="tag">Tailwind</div>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn primary">Visit</a>
+          <a href="#" class="btn secondary">Source</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+</body>
