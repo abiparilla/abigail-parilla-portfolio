@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Abigail Parilla's portfolio showcasing her projects and skills.">
     <title>Abigail Parilla's Portfolio</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPN7S1QFX6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MPN7S1QFX6');
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <nav>
     <ul>
         <li>Abigail Parilla</li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button onclick="changeTheme()" class="theme-toggle">🌙</button></li>
+        <li><a href="#home" data-event="nav_click" data-label="Home">Home</a></li>
+        <li><a href="#skills" data-event="nav_click" data-label="Skills">Skills</a></li>
+        <li><a href="#projects" data-event="nav_click" data-label="Projects">Projects</a></li>
+        <li><a href="#experience" data-event="nav_click" data-label="Experience">Experience</a></li>
+        <li><a href="#certifications" data-event="nav_click" data-label="Certifications">Certifications</a></li>
+        <li><a href="#contact" data-event="nav_click" data-label="Contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -30,10 +41,13 @@
         <p>I'm a student at Hofstra University's Zarb School of Business majoring in Information Systems who enjoys working with technology and data. I like building projects, learning new things, and turning ideas into something real.</p>
         <div class="hero-socials">
             <a class="hero-social-button" href="https://www.linkedin.com/in/abigailparilla/" target="_blank" rel="noopener noreferrer" aria-label="Visit Abigail Parilla on LinkedIn">
-                <img class="hero-social-icon" src="assets/linkedin-icon.png" alt="">
+                <img class="hero-social-icon" src="assets/linkedin-icon.png" alt="LinkedIn">
             </a>
             <a class="hero-social-button" href="https://github.com/abiparilla" target="_blank" rel="noopener noreferrer" aria-label="Visit Abigail Parilla on GitHub">
                 <img class="hero-social-icon" src="assets/github-icon.png" alt="">
+            </a>
+            <a class="hero-social-button" href="https://app.joinhandshake.com/profiles/abigailparilla" target="_blank" rel="noopener noreferrer" aria-label="Visit Abigail Parilla on GitHub">
+                <img class="hero-social-icon" src="assets/handshake-icon.png" alt="Handshake">
             </a>
         </div>
     </div>
@@ -163,8 +177,23 @@
                         <span>GA4</span>
                     </div>
                     <div class="project-actions">
-                        <a href="https://abiparilla.github.io/hofstra-cybersecurity-web-redesign/index.html" target="_blank" rel="noopener noreferrer" class="btn primary">Visit</a>
-                        <a href="https://github.com/abiparilla/hofstra-cybersecurity-web-redesign.git" target="_blank" rel="noopener noreferrer" class="btn secondary">Source</a>
+                        <a href="https://abiparilla.github.io/hofstra-cybersecurity-web-redesign/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn primary"
+                            data-event="project_click"
+                            data-label="Hofstra Cybersecurity Website">
+                            Visit
+                        </a>
+
+                        <a href="https://github.com/abiparilla/hofstra-cybersecurity-web-redesign.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn secondary"
+                            data-event="project_click"
+                            data-label="Hofstra Cybersecurity Source">
+                            Source
+                        </a>
                     </div>
                 </div>
             </div>
@@ -180,8 +209,22 @@
                         <span>JavaScript</span>
                     </div>
                     <div class="project-actions">
-                        <a href="https://abiparilla.github.io/IT030-Web-Analytics/final/index.html" target="_blank" rel="noopener noreferrer" class="btn primary">Visit</a>
-                        <a href="https://github.com/abiparilla/IT030-Web-Analytics.git" target="_blank" rel="noopener noreferrer" class="btn secondary">Source</a>
+                        <a href="https://abiparilla.github.io/IT030-Web-Analytics/final/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn primary"
+                            data-event="project_click"
+                            data-label="Skin Care Guide Visit">
+                            Visit
+                        </a>
+                        <a href="https://github.com/abiparilla/IT030-Web-Analytics.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn secondary"
+                            data-event="project_click"
+                            data-label="Skin Care Guide Source">
+                            Source
+                        </a>
                     </div>
                 </div>
             </div>
@@ -197,9 +240,30 @@
                         <span>Product Strategy</span>
                     </div>
                     <div class="project-actions">
-                        <a href="assets/Projects/SOLVEXA-Pitch-Deck-Project.pdf" target="_blank" rel="noopener noreferrer" class="btn tertiary">Presentation</a>
-                        <a href="https://abiparilla.github.io/Solvexa/index.html" target="_blank" rel="noopener noreferrer" class="btn primary">Visit</a>
-                        <a href="https://github.com/abiparilla/Solvexa.git" target="_blank" rel="noopener noreferrer" class="btn secondary">Source</a>
+                        <a href="assets/Projects/SOLVEXA-Pitch-Deck-Project.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn tertiary"
+                            data-event="project_click"
+                            data-label="SOLVEXA Pitch Deck">
+                            Presentation
+                        </a>
+                        <a href="https://abiparilla.github.io/Solvexa/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn primary"
+                            data-event="project_click"
+                            data-label="SOLVEXA Website">
+                            Visit
+                        </a>
+                        <a href="https://github.com/abiparilla/Solvexa.git"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn secondary"
+                            data-event="project_click"
+                            data-label="SOLVEXA Source">
+                            Source
+                        </a>
                     </div>
                 </div>
             </div>
@@ -215,8 +279,22 @@
                         <span>Statistical Modeling</span>
                     </div>
                     <div class="project-actions">
-                        <a href="assets/Projects/Case-1.pdf" target="_blank" rel="noopener noreferrer" class="btn tertiary">Case Study 1</a>
-                        <a href="assets/Projects/Case-2.pdf" target="_blank" rel="noopener noreferrer" class="btn tertiary">Case Study 2</a>
+                        <a href="assets/Projects/Case-1.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn tertiary"
+                            data-event="project_click"
+                            data-label="Case Study 1 Visit">
+                            Case Study 1
+                        </a>
+                        <a href="assets/Projects/Case-2.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn tertiary"
+                            data-event="project_click"
+                            data-label="Case Study 2 Visit">
+                            Case Study 2
+                        </a>
                     </div>
                 </div>
             </div>
@@ -232,7 +310,14 @@
                         <span>Analysis</span>
                     </div>
                     <div class="project-actions">
-                        <a href="assets/Projects/Global-Data-Privacy-Regulatory-Analysis.pdf" target="_blank" rel="noopener noreferrer" class="btn tertiary">View</a>
+                        <a href="assets/Projects/Global-Data-Privacy-Regulatory-Analysis.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn tertiary"
+                            data-event="project_click"
+                            data-label="Global Data Privacy Regulatory Analysis">
+                            View
+                        </a>
                     </div>
                 </div>
             </div>
@@ -248,7 +333,14 @@
                         <span>Business Strategy</span>
                     </div>
                     <div class="project-actions">
-                        <a href="assets/Projects/Social-Media-Rebranding-Strategy-Proposal.pdf" target="_blank" rel="noopener noreferrer" class="btn tertiary">View</a>
+                        <a href="assets/Projects/Social-Media-Rebranding-Strategy-Proposal.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn tertiary"
+                            data-event="project_click"
+                            data-label="Social Media Rebranding Strategy Proposal">
+                            View
+                        </a>
                     </div>
                 </div>
             </div>
@@ -320,35 +412,83 @@
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="certificate-gallery">
-            <a class="certificate-card" href="https://www.credly.com/badges/5831628c-bb45-49ce-9afa-9cafd4b7bf58/public_url" target="_blank" rel="noopener noreferrer" aria-label="Open Microsoft Office Specialist certificate">
+            <a class="certificate-card"
+                href="https://www.credly.com/badges/5831628c-bb45-49ce-9afa-9cafd4b7bf58/public_url"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Microsoft Office Specialist certificate"
+                data-event="cert_click"
+                data-label="Microsoft Office Specialist">
                 <img class="certificate-preview" src="assets/Certifications/MOS-Certificate.jpg" alt="Microsoft Office Specialist Certificate"></img>
             </a>
 
-            <a class="certificate-card" href="assets/Certifications/Forage-Mastercard-Cybersecurity-Certificate.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Forage Mastercard Cybersecurity certificate">
+            <a class="certificate-card"
+                href="assets/Certifications/Forage-Mastercard-Cybersecurity-Certificate.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Forage Mastercard Cybersecurity certificate"
+                data-event="cert_click"
+                data-label="Forage Mastercard Cybersecurity Certificate">
                 <img class="certificate-preview" src="assets/Certifications/Forage-Mastercard-Cybersecurity-Certificate.jpg" alt="Forage Mastercard Cybersecurity Certificate"></img>
             </a>
 
-            <a class="certificate-card" href="assets/Certifications/Kaggle-Intro-to-Programming-Certificate.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Kaggle Intro to Programming certificate">
+            <a class="certificate-card"
+                href="https://www.kaggle.com/learn/certification/abigailparilla/intro-to-programming"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Kaggle Intro to Programming certificate"
+                data-event="cert_click"
+                data-label="Kaggle Intro to Programming Certificate">
                 <img class="certificate-preview" src="assets/Certifications/Kaggle-Intro-to-Programming-Certificate.jpg" alt="Kaggle Intro to Programming Certificate"></img>
             </a>
 
-            <a class="certificate-card" href="assets/Certifications/X-Culture-Consulting-Certificate.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open X-Culture International Business Consulting certificate">
+            <a class="certificate-card"
+                href="assets/Certifications/X-Culture-Consulting-Certificate.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open X-Culture International Business Consulting certificate"
+                data-event="cert_click"
+                data-label="X-Culture International Business Consulting Certificate">
                 <img class="certificate-preview" src="assets/Certifications/X-Culture-Consulting-Certificate.jpg" alt="X Culture International Business Consulting Certificate"></img>
             </a>
 
-            <a class="certificate-card" href="https://portal.bloombergforeducation.com/certificates/nk7XRCi5pvn31XgdaZhRECPP" target="_blank" rel="noopener noreferrer" aria-label="Open Bloomberg BFF certificate">
+            <a class="certificate-card"
+                href="https://portal.bloombergforeducation.com/certificates/nk7XRCi5pvn31XgdaZhRECPP"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Bloomberg BFF certificate"
+                data-event="cert_click"
+                data-label="Bloomberg BFF Certificate">
                 <img class="certificate-preview" src="assets/Certifications/BFF-Certificate.jpg" alt="Bloomberg BFF Certificate"></img>
             </a>
 
-            <a class="certificate-card" href="https://portal.bloombergforeducation.com/certificates/MwXcR1sNVYWXLusCveBWwYYH" target="_blank" rel="noopener noreferrer" aria-label="Open Bloomberg BMC certificate">
+            <a class="certificate-card"
+                href="https://portal.bloombergforeducation.com/certificates/MwXcR1sNVYWXLusCveBWwYYH"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Bloomberg BMC certificate"
+                data-event="cert_click"
+                data-label="Bloomberg BMC Certificate">
                 <img class="certificate-preview" src="assets/Certifications/BMC-Certificate.jpg" alt="Bloomberg BMC Certificate"></img>
             </a>
 
-            <a class="certificate-card" href="https://www.linkedin.com/learning/certificates/9d32623324d12c92ae581da1400d9a8d165538c6fdf5e4e10950b1f56b07aa8e?accountId=194164881&u=194164881&success=true&authUUID=rPGCNH5FQ%2BShWpWLeu3t4A%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open Business Ethics certificate">
+            <a class="certificate-card"
+                href="assets/Certifications/Business-Ethics-Certificate.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Business Ethics Certificate"
+                data-event="cert_click"
+                data-label="Business Ethics Certificate">
                 <img class="certificate-preview" src="assets/Certifications/Business-Ethics-Certificate.jpg" alt="Business Ethics Certificate"></img>
             </a>
-
-            <a class="certificate-card" href="assets/Certifications/Career-Development-Challenge-Certificate.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Career Development Challenge certificate">
+            
+            <a class="certificate-card"
+                href="assets/Certifications/Career-Development-Challenge-Certificate.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Career Development Challenge certificate"
+                data-event="cert_click"
+                data-label="Career Development Challenge Certificate">
                 <img class="certificate-preview" src="assets/Certifications/Career-Development-Challenge-Certificate.jpg" alt="Career Development Challenge Certificate"></img>
             </a>
         </div>
